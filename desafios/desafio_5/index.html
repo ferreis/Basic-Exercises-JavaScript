@@ -17,14 +17,24 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
-                    <h1>Desafio <span class="container__texto-azul">1</span></h1>
+                    <h1>Desafio <span class="container__texto-azul">5</span></h1>
                     <div class="container__campo">
-                        <label class="texto__paragrafo">texto do desafio aqui</label>
-                        <input type="text" id="texto" class="container__input">
+                        <label class="texto__paragrafo">Faça a soma de duas variáveis numéricas e apresente no console
+                            com uma mensagem amigável em Template String.</label>
+                        <div class="container__conteudo_input">
+                            <div>
+                                <label for="fistName" class="texto__input">Numero 1: </label>
+                                <input type="number" id="numero1" class="container__input">
+                            </div>
+                            <div>
+                                <labe for="lastName" class="texto__input">numero 2: </label>
+                                <input type="number" id="numero2" class="container__input">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container__botoes">
-                    <button onclick="funçao()" class="container__botao">botão</button>
+                    <button onclick="soma()" class="container__botao">botão</button>
                 </div>
                 <div class="container__texto">
                     <label class="texto__paragrafo" id="resultado">Resultado</label>
