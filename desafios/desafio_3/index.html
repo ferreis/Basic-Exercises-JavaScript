@@ -17,14 +17,31 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
-                    <h1>Desafio <span class="container__texto-azul">1</span></h1>
+                    <h1>Desafio <span class="container__texto-azul">3</span></h1>
                     <div class="container__campo">
-                        <label class="texto__paragrafo">texto do desafio aqui</label>
-                        <input type="text" id="texto" class="container__input">
+                        <label class="texto__paragrafo">Crie um formulário simples com campos de entrada e utilize
+                            JavaScript para recuperar os valores digitados nos campos usando a propriedade value. Exiba
+                            os valores no console e na tela.</label>
+                            <div class="container__conteudo_input">
+                                <div>
+                                    <label for="fistName" class="texto__input">Nome: </label>
+                                    <input type="text" id="fistName" class="container__input" name="fistName">
+                                </div>
+                                <div>
+                                    <labe for="lastName" class="texto__input">Sobrenome: </label>
+                                    <input type="text" id="lastName" class="container__input" nome="lastName">
+                                </div>
+                                <div>
+                                    <labe for="age" class="texto__input">Idade: </label>
+                                    <input type="text" id="age" class="container__input" nome="age">
+                                </div>
+
+
+                            </div>
                     </div>
                 </div>
                 <div class="container__botoes">
-                    <button onclick="funçao()" class="container__botao">botão</button>
+                    <button onclick="capturarValores()" class="container__botao">Enviar</button>
                 </div>
                 <div class="container__texto">
                     <label class="texto__paragrafo" id="resultado">Resultado</label>
