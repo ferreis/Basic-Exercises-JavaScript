@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Desafios</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Desafio <span class="container__texto-azul">1</span></h1>
+                    <div class="container__campo">
+                        <label class="texto__paragrafo">Crie um programa que verifica se uma palavra ou frase é um
+                            palíndromo.</label>
+                        <input type="text" id="texto" class="container__input">
+                    </div>
+                </div>
+                <div class="container__botoes">
+                    <button onclick="verificador()" class="container__botao">Verificar</button>
+                </div>
+                <div class="container__texto">
+                    <label class="texto__paragrafo" id="textoOriginal">Texto digitado: </label>
+                    <label class="texto__paragrafo" id="textoInvertido">Texto invertido: </label>
+                    <div class="container__itens_checkbox" id="resultadoDesafioUm">
+                        <input type="checkbox" id="naoPalindromo" class="container__checkbox" disabled>
+                        <label for="naoPalindromo" class="texto__paragrafo"> Não é palíndromo</label>
+                        <input type="checkbox" id="Palindromo" class="container__checkbox" disabled>
+                        <label for="Palindromo" class="texto__paragrafo">É palíndromo </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__conteudo">
+            <div class="container__conteudo">
+                <div class="container__informacoes">
+                    <div class="container__texto">
+                        <h1>Desafio <span class="container__texto-azul">2</span></h1>
+                        <div class="container__campo">
+                            <label class="texto__paragrafo">Crie um programa com uma função que receba três números como
+                                argumentos e os retorne em ordem
+                                crescente.</label>
+                            <input type="text" id="palavra" class="container__input">
+                        </div>
+                    </div>
+                    <div class="container__botoes">
+                        <button class="container__botao">Verificar</button>
+                    </div>
+                    <div class="container__texto" id="resultado">
+                        <label class="texto__paragrafo">Resultado:</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/desafio_1.js"></script>
+</body>
+
+</html>
