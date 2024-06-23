@@ -11,5 +11,3 @@
 6. Receba, no mínimo, duas sentenças como uma string e utilize split() para quebrá-la em frases menores com base em um ponto e vírgula como delimitador.
 
 7. Receba uma string contendo números separados por vírgulas. Utilize split() para separar os números e exibi-los no console.
-
-8. Caso precise de ajuda, opções de solução das atividades estarão disponíveis na seção “Opinião da pessoa instrutora”.
