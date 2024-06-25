@@ -8,13 +8,11 @@
 
 005. Faça a soma de duas variáveis numéricas e apresente no console com uma mensagem amigável em Template String.
 
-006. Receba, no mínimo, duas sentenças como uma string e utilize split() para quebrá-la em frases menores com base em um ponto e vírgula como delimitador.
+006. Receba, no mínimo, duas sentenças como uma string e utilize split() para quebrá-la em frases menores com base em um ponto e vírgula como delimitador
 
 007. Receba uma string contendo números separados por vírgulas. Utilize split() para separar os números e exibi-los no console.
 
 008. Crie uma função que aceite uma string como parâmetro, utilize a função parseInt para converter essa string em um número inteiro e retorne o resultado.
-
-009. Receba uma string contendo números separados por vírgulas. Utilize split() para separar os números e exibi-los no console.
 
 010. Escreva um programa de calculadora simples com funções separadas para adição, subtração, multiplicação e divisão. Utilize um bloco condicional para determinar qual função executar com base em uma variável que representa a operação desejada.
 
