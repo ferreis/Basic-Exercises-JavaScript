@@ -72,6 +72,23 @@ body::before {
     margin-bottom: 12px;
 }
 
+.container__tela {
+    width: 100%;
+    background-color: #FFF;
+    padding: 2rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.tela {
+    color: #01080Eed;
+    /* Adicione esta linha para alterar a cor da fonte */
+}
+
 .container__input {
     width: 100%;
     height: 10px;
@@ -86,18 +103,76 @@ body::before {
     font-family: 'Inter', sans-serif;
 }
 
-.container__input__d2 {
-    width: 90%;
-    height: 10px;
-    border-radius: 16px;
-    background-color: #FFF;
-    border: none;
-    color: #1875E8;
-    padding: 2rem;
-    margin-top: 12px;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
+.container__botoes__calculadora {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "botaoDivisao botaoMultiplicacao botaoSubtracao botaoAdicao"
+        "numero7 numero8 numero9 numero0"
+        "numero4 numero5 numero6 botaoLimpar"
+        "numero1 numero2 numero3 resultado";
+}
+
+.numero7 {
+    grid-area: numero7;
+}
+
+.numero8 {
+    grid-area: numero8;
+}
+
+.numero9 {
+    grid-area: numero9;
+}
+
+.botaoDivisao {
+    grid-area: botaoDivisao;
+}
+
+.numero4 {
+    grid-area: numero4;
+}
+
+.numero5 {
+    grid-area: numero5;
+}
+
+.numero6 {
+    grid-area: numero6;
+}
+
+.numero1 {
+    grid-area: numero1;
+}
+
+.numero2 {
+    grid-area: numero2;
+}
+
+.numero3 {
+    grid-area: numero3;
+}
+
+.botaoMultiplicacao {
+    grid-area: botaoMultiplicacao;
+}
+
+.botaoSubtracao {
+    grid-area: botaoSubtracao;
+}
+
+.botaoAdicao {
+    grid-area: botaoAdicao;
+}
+
+.numero0 {
+    grid-area: numero0;
+}
+
+.resultado {
+    grid-area: resultado;
 }
 
 .container__botoes {
@@ -112,6 +187,18 @@ body::before {
     padding: 16px 24px;
     font-size: 24px;
     width: 100%;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.container__botao_calculadora {
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    font-size: 24px;
+    width: 90%;
+    height: 90%;
     font-weight: 700;
     border: none;
     cursor: pointer;

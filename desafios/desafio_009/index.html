@@ -17,17 +17,66 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
-                    <h1>Desafio <span class="container__texto-azul">1</span></h1>
+                    <h1>Desafio <span class="container__texto-azul">9</span></h1>
                     <div class="container__campo">
-                        <label class="texto__paragrafo">texto do desafio aqui</label>
-                        <input type="text" id="texto" class="container__input">
+                        <label class="texto__paragrafo">Escreva um programa de calculadora simples com funções separadas
+                            para adição, subtração, multiplicação e divisão. Utilize um bloco condicional para
+                            determinar qual função executar com base em uma variável que representa a operação
+                            desejada.</label>
+                        <div class="container__tela">
+                            <label class="tela" id="resultado"></label>
+                        </div>
+                        <div class="container__botoes__calculadora">
+                            <div class="numero1">
+                                <button onclick="guardaNumeroTela(1)" class="container__botao_calculadora">1</button>
+                            </div>
+                            <div class="numero2">
+                                <button onclick="guardaNumeroTela(2)" class="container__botao_calculadora">2</button>
+                            </div>
+                            <div class="numero3">
+                                <button onclick="guardaNumeroTela(3)" class="container__botao_calculadora">3</button>
+                            </div>
+                            <div class="numero4">
+                                <button onclick="guardaNumeroTela(4)" class="container__botao_calculadora">4</button>
+                            </div>
+                            <div class="numero5">
+                                <button onclick="guardaNumeroTela(5)" class="container__botao_calculadora">5</button>
+                            </div>
+                            <div class="numero6">
+                                <button onclick="guardaNumeroTela(6)" class="container__botao_calculadora">6</button>
+                            </div>
+                            <div class="numero7">
+                                <button onclick="guardaNumeroTela(7)" class="container__botao_calculadora">7</button>
+                            </div>
+                            <div class="numero8">
+                                <button onclick="guardaNumeroTela(8)" class="container__botao_calculadora">8</button>
+                            </div>
+                            <div class="numero9">
+                                <button onclick="guardaNumeroTela(9)" class="container__botao_calculadora">9</button>
+                            </div>
+                            <div class="numero0">
+                                <button onclick="guardaNumeroTela(0)" class="container__botao_calculadora">0</button>
+                            </div>
+                            <div class="botaoDivisao">
+                                <button onclick="guardaNumeroTela('/')" class="container__botao_calculadora">/</button>
+                            </div>
+                            <div class="botaoMultiplicacao">
+                                <button onclick="guardaNumeroTela('*')" class="container__botao_calculadora">*</button>
+                            </div>
+                            <div class="botaoSubtracao">
+                                <button onclick="guardaNumeroTela('-')" class="container__botao_calculadora">-</button>
+                            </div>
+                            <div class="botaoAdicao">
+                                <button onclick="guardaNumeroTela('+')" class="container__botao_calculadora">+</button>
+                            </div>
+                            <div class="calcularResultado">
+                                <button onclick="calcularResultado()" class="container__botao_calculadora">=</button>
+                            </div>
+                            <div class="botaoLimpar">
+                                <button onclick="limparTela()" class="container__botao_calculadora">Limpar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="container__botoes">
-                    <button onclick="funçao()" class="container__botao">botão</button>
-                </div>
-                <div class="container__texto">
-                    <label class="texto__paragrafo" id="resultado">Resultado</label>
                 </div>
             </div>
         </div>
