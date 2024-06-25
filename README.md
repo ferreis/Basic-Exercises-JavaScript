@@ -6,3 +6,5 @@
     2. No projeto *Alugames*, crie uma função para imprimir no console a informação sobre quantos jogos foram alugados.
 <h3>carrinho-compras</h3>
     1. Adicione validações no código para garantir que o usuário só consiga adicionar produtos ao carrinho se tiver selecionado um produto válido e inserido uma quantidade válida. Se a entrada não for válida, exiba uma mensagem de erro apropriada.
+<h3>Ingresso</h3>
+    1. Adicione uma verificação para garantir que a quantidade inserida pelo usuário seja um número positivo. Se o valor não for válido, exiba uma mensagem de erro adequada.
