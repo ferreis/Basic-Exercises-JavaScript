@@ -1,9 +1,10 @@
 let listaAmigos = ["Ferreis", "Ricardo", "Fernando", "Luiz", "Carlos", "Rafael"];
 
 function adicionar() {
-    const amigo = document.getElementById("nome-amigo").value;
-    listaAmigos.push(amigo);
+    let amigo = document.getElementById("nome-amigo");
+    listaAmigos.push(amigo.value);
     document.getElementById("lista-amigos").textContent = listaAmigos.join(", ");
+    amigo.value = "";
 }
 
 function sortear() {
@@ -29,4 +30,6 @@ function sortear() {
 function reiniciar() {
     listaAmigos = [];
     document.getElementById("lista-sorteio").innerHTML = "";
+    document.getElementById("lista-amigos").innerHTML = "";
+
 }
