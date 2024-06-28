@@ -45,10 +45,17 @@ function atualizarLista() {
     lista.innerHTML = "";
 
     for (let index = 0; index < listaAmigos.length; index++) {
-        lista.textContent = listaAmigos[index];
+        let label = document.createElement("label");
+        label.innerText = listaAmigos[index] + ', ';
+        label.addEventListener('click', function(){
+            excluirAmigoDaLista();
+        })
+        lista.appendChild(label)
     }
 }
-
+function excluirAmigoDaLista() {
+    console.log("teste do addEventListener"); 
+}
 function atualizarSortear() {
     let lista = document.getElementById("lista-sorteio");
     lista.innerHTML = "";
