@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafios</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Desafio <span class="container__texto-azul">12 a 15</span></h1>
+                    <div class="container__campo">
+                        <label class="texto__paragrafo">Adicione os números 1,2,3 em uma variável chamada minhaLista e
+                            armazene os números 4, 5 e 6 separadamente em outra variável. Use o método concat() para
+                            combinar as sequências de valores em uma nova lista chamadanovaLista. Imprima novaLista no
+                            console.
+                        </label>
+                        <br>
+                        <labe class="texto__paragrafo" for="input_1">Informe o primeiro array, os itens serão separados por espaços.</label>
+                        <input type="text" id="input_1" class="container__input">
+                        <br>
+                        <label class="texto__paragrafo" for="input_2">Informe o segundo array, os itens serão separados por espaços.</label>
+                        <input type="text" id="input_2" class="container__input">
+                    </div>
+                </div>
+                <div class="container__botoes">
+                    <button onclick="Concatenar()" class="container__botao">Concatenar </button>
+                </div>
+                <div class="container__texto">
+                    <label class="texto__paragrafo" id="resultado">Resultado</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
