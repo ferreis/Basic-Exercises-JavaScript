@@ -1,31 +1,59 @@
-let listaAmigos = ["Ferreis", "Ricardo", "Fernando", "Luiz", "Carlos", "Rafael"];
+let listaAmigos = ["FERREIS", "RICARDO", "FERNANDO", "LUIZ", "CARLOS", "RAFAEL"];
 
 function adicionar() {
     let amigo = document.getElementById("nome-amigo");
-    listaAmigos.push(amigo.value);
-    document.getElementById("lista-amigos").textContent = listaAmigos.join(", ");
+    amigo.value = amigo.value.toUpperCase();
+    console.log(amigo.value);
+
+    if (!listaAmigos.includes(amigo.value)) {
+        listaAmigos.push(amigo.value);
+    }
+
     amigo.value = "";
+    atualizarLista();
+    atualizarSortear();
 }
 
 function sortear() {
-    document.getElementById("lista-sorteio").innerHTML = "";
-    let listaSorteado = [];
-    for (let index = 0; index < listaAmigos.length;) {
-        let sorteado = listaAmigos[parseInt(Math.random() * listaAmigos.length)];
-        if (listaSorteado[index] != listaAmigos[index] && listaAmigos[index] != sorteado 
-            && !listaSorteado.includes(sorteado) && sorteado != undefined) {
-            listaSorteado.push(sorteado);
-            index++;
+    listaAmigos = embaralharLista(listaAmigos);
+    console.log(listaAmigos);
+    let sorteio = document.getElementById('lista-sorteio');
+    for (let index = 0; index < listaAmigos.length; index++) {
+        if (index == listaAmigos.length - 1) {
+            sorteio.innerHTML = sorteio.innerHTML + `${listaAmigos[index]} --> ${listaAmigos[0]}` + '<br/>';
+        } else {
+            sorteio.innerHTML = sorteio.innerHTML + `${listaAmigos[index]} --> ${listaAmigos[index+1]}` + '<br/>';
         }
     }
+}
+
+function embaralharLista(lista) {
+    let tamanhoLista = lista.length;
+
+    while (tamanhoLista != 0) {
+        let randomIndex = Math.floor(Math.random() * tamanhoLista);
+        tamanhoLista--;
+        [lista[tamanhoLista], lista[randomIndex]] = [
+            lista[randomIndex], lista[tamanhoLista]
+        ];
+    }
+    return lista;
+}
+
+function atualizarLista() {
+    let lista = document.getElementById("lista-amigos");
+    lista.innerHTML = "";
 
     for (let index = 0; index < listaAmigos.length; index++) {
-        let novoItem = document.createElement("p");
-        novoItem.innerHTML = ` ${listaAmigos[index]} -> ${listaSorteado[index]}<br>`;
-        document.getElementById("lista-sorteio").appendChild(novoItem);
-
+        lista.textContent = listaAmigos[index];
     }
 }
+
+function atualizarSortear() {
+    let lista = document.getElementById("lista-sorteio");
+    lista.innerHTML = "";
+}
+
 
 function reiniciar() {
     listaAmigos = [];
